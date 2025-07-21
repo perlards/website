@@ -1,0 +1,35 @@
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background: #0A2463;
+    padding: 15px 0;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 15%;
+    color: #ffffff;
+    font-size: 25px;
+    font-family:"Instrument Serif", sans-serif;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    }
+
+
+    #navbar a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 30px;
+    }
+
+    #navbar a:hover {
+    color: #ccc;
+    }
+
+
+
+
+
+
+
+
+
