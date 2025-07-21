@@ -5,32 +5,46 @@
     gap: 40px;
     margin-bottom: 50px;
     font-size: 2.1rem;
+    background-color: #f9f3e8;
 }
 #profile-text {
     
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
 #profile-text img:hover {
     transform: scale(1.15);
     cursor: pointer;
+    
 }
-#profile h2 {
-    font-size: 43px;
-}                                                                                                                                                       mm
+/*PERLA RUIZ */
+#profile h2 { 
+    font-size: 60px; 
+    margin-bottom: 0;
+    color: #000000;
+    
+}   
+/* GITHUB and LinkedIn icons */                                                                                                                                                    mm
 .icons {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 10px;
 }
+/* boston university student*/
+#profile-text p {
+    margin-top: 0;
+    font-size: 30px;
+    color: #96072a;
+}
 
-
-
-
-
-
-
-
-
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* makes it round */
+    object-fit: cover; /* crops the image nicely */
+    border: 5px solid #96072a; /* optional: adds a border */
+}

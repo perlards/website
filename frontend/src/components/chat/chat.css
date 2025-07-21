@@ -24,7 +24,7 @@
 .chatbot-response {
     width: 50%;
     margin-right: auto;
-    background-color: #dedede;
+    background-color: #f9f3e8;
     padding: 10px;
     border-radius: 5px;
 }
@@ -51,7 +51,7 @@ input[type="text"] {
     font-size: 16px;
     border: 2px solid #dedede;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #eb5353;
     color: #333;
 }
   
