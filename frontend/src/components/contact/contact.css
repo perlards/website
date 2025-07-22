@@ -1,0 +1,24 @@
+.contact {
+    background: none !important;         /* Removes any background color */
+    border: none !important;             /* Removes any border */
+    box-shadow: none !important;         /* Removes shadow, if there is any */
+    padding: 2rem, 0; /* padding inside the element 2 rem is top/bottom 0 left/right */
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-top: 1px solid #ccc;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:#96072a
+}
+
+.contact a{
+    color: #96072a;
+
+}
+
