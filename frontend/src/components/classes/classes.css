@@ -1,0 +1,22 @@
+#classes {
+    padding: 30px 20px;
+    text-align: center;
+    background: none; /* optional: no background */
+}
+
+#classes h2 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+#classes ul {
+    list-style: none;
+    padding: 0;
+}
+
+#classes li {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}

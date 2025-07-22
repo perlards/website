@@ -3,16 +3,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color:#000000;
+    background-color:#7a0909;
+
     gap: 20px;
 }
 
 .chatbox {
     position: relative;
     width: 100%;
+
 }
 
 .x {
-    position: absolute;
+    
     top: -25px;
     right: -10px;
     font-size: 0.8rem;
@@ -24,38 +28,58 @@
 .chatbot-response {
     width: 50%;
     margin-right: auto;
-    background-color: #f9f3e8;
+    background-color: #000000;
     padding: 10px;
     border-radius: 5px;
 }
-  
+
 .user-message {
     width: 50%;
     margin-left: auto;
     background-color: #333;
-    color: #fff;
+    color: #000000;
     padding: 10px;
     border-radius: 5px;
 }
-  
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-  
+/* winput text */
 input[type="text"] {
     width: 100%;
     max-width: 400px;
     padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid #dedede;
+    border: 2px solid #4c1d1d;
     border-radius: 5px;
-    background-color: #eb5353;
-    color: #333;
+    background-color: #531b1b;
+    color: #050505;
 }
-  
+/* actual text of question background*/
 input[type="text"]:focus {
     outline: none;
-    border: 2px solid #333;
+    background-color: #d09494;
+    border: 2px solid #000000;
+}
+
+button {
+    margin-top: 10px;
+    background: none !important; 
+    border: none !important;             /* Removes any border */
+    box-shadow: none !important;  
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    border: 2px solid #4c1d1d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    
+    color: white;
 }
