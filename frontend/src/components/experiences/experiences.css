@@ -1,0 +1,42 @@
+.job {
+    background-color: #ffffff62;
+    padding: 1.5rem ;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 30px;
+    border-left: 50px solid #121C7B;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* job titile*/
+.job h3 {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+    color:#000000 ;
+}
+/* experience discription*/
+.job h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #000000;
+    margin: 0.3rem 0;
+}
+/*date*/
+.job .date {
+    font-size: 1 rem;
+    font-style: italic;
+    color: #121C7B;
+    margin-bottom: 0.5rem;
+  }
+/* bullet points */
+  .job ul {
+    padding-left: 1.2rem;
+    font-size: 18px;
+  }
+  
+  .job li {
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+  }
+  

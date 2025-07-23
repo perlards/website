@@ -1,7 +1,22 @@
 body {
-    background-color: #f9f3e8;
+    background-color: #F9f3e8;
+    /* made the nav bar reach through to the entire page */
+    margin: 0; 
+    width:100%;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Instrument Serif", sans-serif;
 }
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+  
 
 
 

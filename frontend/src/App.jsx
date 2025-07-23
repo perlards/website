@@ -9,6 +9,8 @@ import Experiences from './components/experiences/experiences'
 import Classes from './components/classes/classes';
 import Chat from './components/chat/chat'
 import Contact from './components/contact/Contact';
+import websiteSS from './assets/website-ss.png';
+import websiteSS2 from './assets/website-ss2.png';
 
 import './App.css'
 
@@ -57,13 +59,17 @@ import './App.css'
             <h2>Projects</h2>
             <Projects
                 name="Personal Portfolio"
-                description="personal website built from scratch using react,css, jsx"
+                description="This website is my personal space to showcase my projects, skills, and experiences as a computer science student and aspiring software engineer. Built with React, it uses JSX to create dynamic, interactive pages while leveraging HTML, CSS, and JavaScript. Developing this site helped me deepen my understanding of modern web development and challenged me to continuously improve my coding skills. This site will keep evolving as I take on new challenges and grow my skills."
+                imageSrcs={[websiteSS,websiteSS2]} /* add more images of project one here*/
                 github="https://github.com/perlards/website"
+
             />
             <Projects
-                name="Project 2"
-                description="Project 2 Description"
-                github="https://github.com"
+                name="Panther Crossing Coffee "
+                description="I’m currently working on building a website for Panther Crossing Coffee, a small business looking to establish a strong online presence. Drawing inspiration from other successful sites, I’m designing and developing a user-friendly, visually appealing platform that reflects the brand’s unique vibe. This project allows me to apply and expand the skills I’ve used in my own portfolio site, while learning new techniques to create a polished, professional web experience."
+                imageSrc={websiteSS2}
+                github="https://github.com/perlards"
+
             />
             </>
         }
@@ -74,7 +80,8 @@ import './App.css'
 
       {/* Chat appears at the bottom of every page */}
     {(location.pathname === '/' || location.pathname === '/chat') && <Chat />}
-    
+    {/* always show contact on each page*/}
+    <Contact />
     </>
 )
 }
