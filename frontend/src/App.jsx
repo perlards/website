@@ -76,10 +76,12 @@ import './App.css'
         />
 
         <Route path="/classes" element={<Classes />} />
+        <Route path="/chat" element={<Chat />} /> 
+
     </Routes>
 
-      {/* Chat appears at the bottom of every page */}
-    {(location.pathname === '/' || location.pathname === '/chat') && <Chat />}
+    {/* Chat appears at the bottom of every page 
+    {(location.pathname === '/' || location.pathname === '/chat') && <Chat />}*/}
     {/* always show contact on each page*/}
     <Contact />
     </>

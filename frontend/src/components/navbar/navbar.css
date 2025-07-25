@@ -1,14 +1,15 @@
 #navbar {
     display: flex;
     justify-content: space-evenly;
-    background: #7d0d16;
+    background: #000000;
     padding: 15px 0;
     align-items: center;
     margin-bottom: 50px;
     height: 15%;
     color: #ffffff;
     font-size: 25px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Cormorant Garamond", serif; 
+    font-weight: 300;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -18,7 +19,7 @@
 
 /* about project experience */
     #navbar a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 40px;
     margin-right: 15px;
@@ -28,7 +29,7 @@
 
 /* changes the about when i hover */
     #navbar a:hover {
-    color: #4f0707;
+    color: #142baf;
     font-style: italic;
     }
 

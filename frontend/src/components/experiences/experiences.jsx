@@ -1,3 +1,5 @@
+import './experiences.css';
+/* ttemplate for the experiences but data is in the app.jsx*/
 function Experiences({ title, info, dates, bullets }) {
     return (
         <div className="job">

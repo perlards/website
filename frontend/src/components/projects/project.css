@@ -1,63 +1,58 @@
-body {
-    font-family: "Inter";
-    background-color: #DEDEDE;
-    color: #333;
-}
-#about,
-#chat,
-#projects,
-#exp {
-    width: 60%;
-    margin: 30px auto;
-    background-color: #eee;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-#projects h2,
-#about h2,
-#chat h2,
-#exp h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 15px;
-    position: relative;
-}
-.project,
-.job {
-    background: #DEDEDE;
-    margin: 0 auto;
+.project {
+    background-color: #ffffff62;
+    padding: 1.5rem;
+    margin-left: 75px;
     margin-bottom: 30px;
-    width: 75%;
-    padding: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-right: 75px;
+    border-left: 50px solid #121C7B;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-#projects li,
-.job li {
-    margin-left: 25px;
+
+/* project name */
+.project h4 {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+    color: #000000;
 }
-button {
+
+/* project description */
+.project p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #000000;
+    margin: 0.3rem 0;
+    line-height: 1.5;
+}
+
+/* GitHub button */
+.project button {
     padding: 0.4rem 0.8rem;
-    border: 0.2rem solid #333;
+    border: 0.2rem solid #121C7B;
     border-radius: 0.5rem;
-    background-color: #333;
-    color: #fff;
-    font-size: 1.3rem;
+    background-color: #121C7B;
+    color: #ffffff;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 1rem;
     cursor: pointer;
-}
-button:hover {
-    background-color: #DEDEDE;
-    color: #333;
+    display: flex;
+    align-items: center;
 }
 
+/* GitHub icon */
+.github-inline {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    color:#ffffff;
+}
 
-
-
-
-
-
-
-
-
+/* Button hover effect */
+.project button:hover {
+    background-color: #ffffff;
+    color: #121c7b;
+    border-color: #121C7B;
+}

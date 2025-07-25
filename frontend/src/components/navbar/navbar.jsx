@@ -4,7 +4,8 @@ import './navbar.css'
 function Navbar() {
     return (
         <div id="navbar">
-            <h1>Perla Ruiz del Solar</h1>
+            {/* name on header bar
+            <h1>Perla Ruiz del Solar</h1> */}
             <Link className="nav-about" to="/">About</Link>
             <Link className="nav-experience" to="/experiences">Experiences</Link>
             <Link className="nav-projects" to="/projects">Projects</Link>

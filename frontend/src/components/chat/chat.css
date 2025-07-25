@@ -1,85 +1,141 @@
 #chat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color:#000000;
-    background-color:#7a0909;
-
-    gap: 20px;
-}
-
-.chatbox {
-    position: relative;
-    width: 100%;
+    background-color: #121c7b;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 550px;
+    margin: 60px auto;
+    font-family: 'Georgia', serif;
+    margin-top: 100px;
 
 }
 
-.x {
-    
-    top: -25px;
-    right: -10px;
-    font-size: 0.8rem;
-    padding: 2px 5px;
-    border-radius: 50%;
-    border-width: 0.2rem;
+/*have a question*/
+#chat h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ffffff;
 }
 
-.chatbot-response {
-    width: 50%;
-    margin-right: auto;
-    background-color: #000000;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.user-message {
-    width: 50%;
-    margin-left: auto;
-    background-color: #333;
-    color: #000000;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* winput text */
-input[type="text"] {
-    width: 100%;
-    max-width: 400px;
+/*what user texts*/
+#chat input[type="text"] {
     padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid #4c1d1d;
+    width: 70%;
+    border: 1px solid #0a0038;
     border-radius: 5px;
-    background-color: #531b1b;
-    color: #050505;
-}
-/* actual text of question background*/
-input[type="text"]:focus {
-    outline: none;
-    background-color: #d09494;
-    border: 2px solid #000000;
+    margin-bottom: 10px;
+    color:#ffffff;
+    background-color: #5959688d;       /* or any color you want */
 }
 
-button {
-    margin-top: 10px;
+#chat input::placeholder {
+    color: #141313;  /* or any color you want */
+    text-align: center
+          /* ensure full visibility */
+}
+
+
+/* submit*/
+#chat button {
+    margin-top: 20px;
+    padding: 10px 20px;
     background: none !important; 
     border: none !important;             /* Removes any border */
-    box-shadow: none !important;  
-    padding: 10px 20px;
+    box-shadow: none !important; 
+    font-family: 'Georgia', serif;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
     font-size: 16px;
-    color: #000000;
-    border: 2px solid #4c1d1d;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+/* what happens when it hovers*/
+#chat button:hover {
+    background-color: #444;
+    color: #ffffff;
+    border-color: #121C7B;
+    font-style: italic;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  /* Chat message styles */
+.chatbox {
+    margin-top: 10px;
+    padding: 1px 15px;
+    background: #948a8aa1;
+    border-radius: 6px;
+    text-align: left;
+
+}
+
+.user-message {
+    color: #000;
+    font-weight: bold;
+    text-align: left;       /* Align user messages to the right */
+}
+
+
+.chatbot-response {
+    color: #fdf8f8;
+    text-align: right;        /* Align AI messages to the left */
+    font-style: italic;
     
-    color: white;
+}
+
+.chatbot-greeting {
+    color: #000000c0; /* Use any color you'd like */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.chat-history {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+
+}
+
+.loading-message {
+    font-style: italic;
+    color: #888;
+    padding: 8px 12px;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+.dots::after {
+    content: '...';
+    animation: blink 1.2s steps(3, end) infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+@keyframes blink {
+    0% { content: ''; }
+    33% { content: '.'; }
+    66% { content: '..'; }
+    100% { content: '...'; }
+}
+
+.chatbox.loading p {
+    font-style: italic;
+    color: #aaa;
+    font-weight: bold;
+    animation: blink 1.2s infinite;
 }
