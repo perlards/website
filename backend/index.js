@@ -38,23 +38,28 @@ Answer questions as if you're introducing Perla to someone new.
 `;
 
 
-const chat = model.startChat({
-    history: [
-        {author: 'system', content: SYSTEM_PROMPT }
-    ],
-    generationConfig: {
-    temperature: 0.7,
-    },
-});
 //route to handle user input
 app.post('/chat', async (req, res) => { 
     const userInput = req.body.userInput; 
     console.log('User input:', userInput);
+    
 
 try {
-    const result = await chat.sendMessage(userInput);
+    const chat = model.startChat({
+        generationConfig: {
+          temperature: 0.7,
+        },
+        history: [
+          {
+            role: 'user',
+            parts: [{ text: SYSTEM_PROMPT }]
+          }
+        ]
+      });
+    const result = await chat.sendMessage(fullPrompt);
     const response = await result.response;
     const text = response.text();
+    
     res.json({ message: text });
 
 }catch(err) {
