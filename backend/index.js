@@ -32,7 +32,9 @@ About Perla:
 - She looks up to companies like Pinterest, Netflix, and Google.
 - Her favorite album right now is Pure Heroine by Lorde 
 - Her favorite artists right now are Lana del rey and lorde
-- Her favorite color is blue
+- Her favorite color is dark blue
+- She enjoys running, spin classes, reading and listening to music!
+
 
 Answer questions as if you're introducing Perla to someone new.
 `;
@@ -45,28 +47,21 @@ app.post('/chat', async (req, res) => {
     
 
 try {
-    const chat = model.startChat({
-        generationConfig: {
-          temperature: 0.7,
-        },
-        history: [
-          {
-            role: 'user',
-            parts: [{ text: SYSTEM_PROMPT }]
-          }
-        ]
-      });
-    const result = await chat.sendMessage(fullPrompt);
+    const prompt = `${SYSTEM_PROMPT}\n\nUser: ${userInput}\nAI:`;
+
+    const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = response.text();
-    
+
     res.json({ message: text });
 
-}catch(err) {
-    console.error('Error!', err)
-    return res.status(500).json({ message: 'Oops, something went wrong!' });
-} 
-})
+    } catch (err) {
+    console.error('Error!', err);
+    res.status(500).json({ message: 'Oops, something went wrong!' });
+    }
+});
+
+
 /* start server*/
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
