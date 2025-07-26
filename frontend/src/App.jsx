@@ -8,7 +8,7 @@ import Projects from './components/projects/projects'
 import Experiences from './components/experiences/experiences'
 import Classes from './components/classes/classes';
 import Chat from './components/chat/chat'
-import Contact from './components/contact/Contact';
+import Contact from './components/contact/contact';
 import websiteSS from './assets/website-ss.png';
 import websiteSS2 from './assets/website-ss2.png';
 
