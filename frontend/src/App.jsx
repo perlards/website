@@ -59,7 +59,7 @@ import './App.css'
             <h2>Projects</h2>
             <Projects
                 name="Personal Portfolio"
-                description="This website is my personal space to showcase my projects, skills, and experiences as a computer science student and aspiring software engineer. Built with React, it uses JSX to create dynamic, interactive pages while leveraging HTML, CSS, and JavaScript. Developing this site helped me deepen my understanding of modern web development and challenged me to continuously improve my coding skills. This site will keep evolving as I take on new challenges and grow my skills."
+                description="This website is my personal space to showcase my projects, skills, and experiences as an aspiring software engineer working towards my computer science degree. Built using React, my website utilizes JSX to create dynamic, interactive pages while leveraging mutiple programming languages such as, HTML, CSS, and JavaScript. Developing this site helped me deepen my understanding of modern web development while challenging me to continuously improve my coding skills. This site will keep evolving as I take on new challenges and grow my skills."
                 imageSrcs={[websiteSS,websiteSS2]} /* add more images of project one here*/
                 github="https://github.com/perlards/website"
 
@@ -74,6 +74,7 @@ import './App.css'
             </>
         }
         />
+      
 
         <Route path="/classes" element={<Classes />} />
         <Route path="/chat" element={<Chat />} /> 

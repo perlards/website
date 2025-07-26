@@ -5,7 +5,7 @@
     padding: 15px 0;
     align-items: center;
     margin-bottom: 50px;
-    height: 15%;
+    height: auto;        /*  grow on small screens */
     color: #ffffff;
     font-size: 25px;
     font-family: "Cormorant Garamond", serif; 
@@ -13,8 +13,10 @@
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0;                             /* override side margins */
+    flex-wrap: wrap;                       /* allow wrapping on smaller screens */
+    width: 100vw;                          /* make navbar stretch across screen */
+    z-index: 999;                          /* stay above other elements */
     }
 
 /* about project experience */
@@ -29,7 +31,7 @@
 
 /* changes the about when i hover */
     #navbar a:hover {
-    color: #142baf;
+    color: #112bbc;
     font-style: italic;
     }
 
@@ -50,12 +52,40 @@
     font-family: "Times New Roman", Times, serif;
 
 }
+@media (max-width: 900px) {
+    #navbar {
+        font-size: 20px;
+    }
+
+    #navbar a {
+        font-size: 28px;
+        margin: 8px 12px;
+    }
+
+    #navbar h1 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 600px) {
+    #navbar {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #navbar a {
+        font-size: 20px;
+        margin: 6px 10px;
+    }
+
+    #navbar h1 {
+        font-size: 20px;
+    }
+}
+
 
 
 /*font-family: 'Courier New', monospace;
 alternative font */ 
-
-
 
 
 

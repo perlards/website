@@ -6,25 +6,28 @@
 }
 
 #classes h2 {
-    font-size: 32px;
+    font-size: 40px;
     color: #111;
     margin-bottom: 20px;
+    margin-top: -27px;
 }
 
 #classes h3 {
     font-size: 25px;
-    color: #111;
+    color: #121c7b;
     margin-bottom: 20px;
+    
 }
 
 #classes ul {
     list-style: none;
     padding: 0;
+    
 }
 
 #classes li {
     font-size: 23px;
-    color: #444;
+    color: #000000;
     margin-bottom: 10px;
 }
 

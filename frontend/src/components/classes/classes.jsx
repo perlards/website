@@ -3,7 +3,7 @@ import './classes.css';
 function Classes() {
     return (
     <div id="classes">
-    <h2>Courses</h2>
+    <h2>Classes</h2>
     <div className="class-columns">
         <div className="class-column">
     <h3>Computer Science Courses Taken</h3>
@@ -23,7 +23,7 @@ function Classes() {
     </div>
 
     <div className="class-column">
-    <h3>Business & Administration Classes Taken</h3>
+    <h3>Business & Administration Courses Taken</h3>
     <ul>
         <li>SM 131 - Business, Ethics, Value</li>
         <li>QM 221 - Prob/Stat Decision Making</li>
@@ -37,8 +37,8 @@ function Classes() {
     <h3>Taking This Semester</h3>
     <ul>
         <li>CS 330 - Analysis of Algorithms</li>
-        <li>CS 391 - Topics in Computer Science</li>
-        <li>SM 275 - Critical/Analytic Thinking Bus</li>
+        <li>CS 391 A1 - Topics in Computer Science - Web Application Development</li>
+        <li>SM 275 - Critical/Analytic Thinking Business</li>
     </ul>
     </div>
     </div>

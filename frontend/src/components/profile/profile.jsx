@@ -2,6 +2,7 @@ import './profile.css'
 import ProfilePic from '../../assets/profile-pic.jpeg'
 import LinkedinImage from '../../assets/linkedin1.png'
 import GitHubIcon from '../../assets/github-icon1.png'
+import Resume from '../../assets/resume.png'
 
 
 function Profile() {
@@ -14,6 +15,9 @@ function Profile() {
                 <div className="icons">
                     <a target="_blank" href="https://www.linkedin.com/in/perla-ruiz-3a546b328//"><img id="linkedin-img" width="60" src={LinkedinImage} /></a>
                     <a target="_blank" href="https://github.com/perlards"><img id="github-img" width="60" src={GitHubIcon} /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="/resume.pdf">
+                        <img id="resume-img" width="60" src={Resume} alt="Resume Icon" />
+                    </a>
                 </div>
             </div>
         </div>

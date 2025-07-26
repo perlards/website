@@ -13,7 +13,7 @@ function Chat() {
             setMessages(prev => {
                 const newMessages = [...prev, userInput];
                 // Keep last 6 messages max (3 questions + 3 answers)
-                return newMessages.slice(-6);
+                return newMessages.slice(-4);
             });
             setUserInput('')
             setLoading(true)
@@ -31,7 +31,7 @@ function Chat() {
             const {message} = await response.json()
             setMessages(prev => {
                 const newMessages = [...prev, message];
-                return newMessages.slice(-6);
+                return newMessages.slice(-4);
             });
             
 
@@ -39,15 +39,18 @@ function Chat() {
             console.error(error)
             setMessages(prev => {
                 const newMessages = [...prev, "Something went wrong!"];
-                return newMessages.slice(-6);
+                return newMessages.slice(-4);
             });
         }
         setLoading(false);
     }
     return (
+        <div>
+
+        {/* The actual chat container */}
         <div id = "chat">
             <form onSubmit={(e) => { e.preventDefault(); getResponse(); }}>    
-                <h2>Have a question?</h2>
+                <h2>Have a question about me?</h2>
                 <div className="input-group"> 
                 <input 
                 type = "text" 
@@ -80,6 +83,7 @@ function Chat() {
             <p className="chatbot-response">AI is typing...</p>
             </div>
             }
+        </div>
         </div>
     </div>
     );
