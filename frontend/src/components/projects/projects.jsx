@@ -30,6 +30,7 @@ function Projects({ name, description, github, imageSrcs = [] }) {
             onClick={() => setIsOpen(true)}
         />
             )}
+        {github ? (
         <a 
                 target="_blank" rel="noreferrer" href={github}>
                 <button className="github">
@@ -37,11 +38,26 @@ function Projects({ name, description, github, imageSrcs = [] }) {
                 className="github-inline"
                 width="20"
                 src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                alt="GitHub"
+                alt="GitHub Button"
             />
                     GitHub
                 </button>
             </a>
+        ): (
+            <div className="coming-soon-placeholder">
+            <button className="github disabled" disabled >
+
+                <img
+                    className="github-inline"
+                    width="20"
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="GitHub Button"
+                />
+                Coming Soon
+            </button>
+            </div>
+        )}
+
         </div>
         
         {isOpen && ( /*conditional*/

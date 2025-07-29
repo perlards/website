@@ -41,6 +41,18 @@
     align-items: center;
 }
 
+.github.disabled {
+    background-color: #121C7B;
+    color: #ffffff;
+    cursor: not-allowed;
+    opacity: 1;
+}
+  
+.coming-soon-placeholder {
+    margin-top: 10px;
+}
+  
+
 /* GitHub icon */
 .github-inline {
     vertical-align: middle;
