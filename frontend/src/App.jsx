@@ -68,7 +68,7 @@ import './App.css'
                 name="Panther Crossing Coffee "
                 description="I’m currently working on building a website for Panther Crossing Coffee, a small business looking to establish a strong online presence. Drawing inspiration from other successful sites, I’m designing and developing a user-friendly, visually appealing platform that reflects the brand’s unique vibe. This project allows me to apply and expand the skills I’ve used in my own portfolio site, while learning new techniques to create a polished, professional web experience."
                 imageSrc={websiteSS2}
-                github="https://github.com/perlards"
+                github="" /* add link here */
 
             />
             </>
