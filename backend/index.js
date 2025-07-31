@@ -4,6 +4,15 @@ import bodyParser from 'body-parser'
 import dotenv from 'dotenv'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
+process.on('uncaughtException', err => {
+    console.error('Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', err => {
+    console.error('Unhandled Rejection:', err);
+});
+
+
 dotenv.config()
 
 const app = express()
@@ -56,8 +65,8 @@ try {
     res.json({ message: text });
 
     } catch (err) {
-    console.error('Error!', err);
-    res.status(500).json({ message: 'Oops, something went wrong!' });
+        console.error('Gemini API Error:', err?.response?.data || err.message || err);
+        res.status(500).json({ message: 'Oops, something went wrong!' });
     }
 });
 
