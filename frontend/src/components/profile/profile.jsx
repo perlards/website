@@ -13,7 +13,7 @@ function Profile() {
                 <h2>Perla Ruiz del Solar</h2>
                 <p>Boston University Student</p>
                 <div className="icons">
-                    <a target="_blank" href="https://www.linkedin.com/in/perla-ruiz-3a546b328//"><img id="linkedin-img" width="60" src={LinkedinImage} alt="LinkedIn Icon"  /></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/perlards"><img id="linkedin-img" width="60" src={LinkedinImage} alt="LinkedIn Icon"  /></a>
                     <a target="_blank" href="https://github.com/perlards"><img id="github-img" width="60" src={GitHubIcon} alt="Github Icon"  /></a>
                     <a target="_blank" rel="noopener noreferrer" href="/resume.pdf"> <img id="resume-img" width="60" src={Resume} alt="Resume Icon" />
                     </a>

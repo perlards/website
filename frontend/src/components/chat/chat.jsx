@@ -18,7 +18,7 @@ function Chat() {
             setUserInput('')
             setLoading(true)
             try{
-            const response = await fetch('http://localhost:4000/chat', {
+            const response = await fetch('https://website-production-4b0f.up.railway.app/chat', {
                 method: 'POST',
                 headers : {
                     'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ function Chat() {
                 </div>
             </form>
             
-            <div className="chat-history">
+            <div className="chat-history" aria-live="polite" aria-atomic="true">
             {messages.map((text, index) => (
                 <div key={index} className="chatbox">
                     <p className={
