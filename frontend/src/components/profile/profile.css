@@ -178,3 +178,8 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .profile-img {
+    width: 220px;
+    }
+}
