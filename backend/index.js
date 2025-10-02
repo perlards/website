@@ -22,7 +22,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY)
-const model = genAI.getGenerativeModel({ model: 'models/gemini-1.5-flash' });
+const model = genAI.getGenerativeModel({ model: 'models/gemini-1.5-flash-latest' });
 
 
 /* about me section for ai */
