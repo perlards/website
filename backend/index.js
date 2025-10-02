@@ -65,8 +65,9 @@ app.post('/chat', async (req, res) => {
 try {
     const prompt = `${SYSTEM_PROMPT}\n\nUser: ${userInput}\nAI:`;
 
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
+    const result = await model.generateContent({
+        contents: [{ role: "user", parts: [{ text: prompt }] }]
+    });
     const text = response.text();
 
     console.log('AI response:', text); // test gemini api
