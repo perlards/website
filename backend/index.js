@@ -22,7 +22,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY)
-const model = genAI.getGenerativeModel({ model: 'models/gemini-1.5-flash-latest' });
+const model = genAI.getGenerativeModel({ model: 'models/gemini-flash-latest' });
 
 
 /* about me section for ai */
@@ -68,7 +68,7 @@ try {
     const result = await model.generateContent({
         contents: [{ role: "user", parts: [{ text: prompt }] }]
     });
-    const text = response.text();
+    const text = result.response.text();
 
     console.log('AI response:', text); // test gemini api
 
