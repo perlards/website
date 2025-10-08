@@ -1,5 +1,4 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 /* using this instead of { BrowserRouter} since i want to make chat not on all page hook usage? */
 /*useLocation() only works when the component is inside a <Router>, and you're using it in App(), the <Router> must already be applied in index.js, not in App.jsx.*/
@@ -21,7 +20,6 @@ import './App.css'
 
         return (
             <>
-        <SpeedInsights/>    
         <Navbar/>
         <Profile/>
         
