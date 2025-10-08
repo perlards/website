@@ -79,7 +79,7 @@ import './App.css'
 
             />
             <Projects
-            name="Periodically. [HackMIT 2025]"
+            name="Periodically. HackMIT 2025"
             description="Conceptualized a web app featuring an AI wellness companion for journaling, natural conversations, and emotional insights. Built front-end architecture and UI components for Journal, Mood, and Insights using React, TypeScript, and Tailwind CSS. Collaborated in a 3-person team for HackMIT 2025, contributing to Anthropic, Windsurf and YC challenges."
             imageSrcs={[periodically1,periodically2,periodically3,periodically4,periodically6]} // replace with actual screenshots of the HackMIT project
             github="https://github.com/perlards/hackmit-2025" 
