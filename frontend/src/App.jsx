@@ -12,6 +12,12 @@ import Chat from './components/chat/chat'
 import Contact from './components/contact/contact';
 import websiteSS from './assets/website-ss.png';
 import websiteSS2 from './assets/website-ss2.png';
+import periodically1 from './assets/periodically1.png';
+import periodically2 from './assets/periodically2.png';
+import periodically3 from './assets/periodically3.png';
+import periodically4 from './assets/periodically4.png';
+import periodically6 from './assets/periodically6.png';
+
 
 import './App.css'
 
