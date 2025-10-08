@@ -16,7 +16,7 @@ function Classes() {
     <div className = "class-column">
     <h3>Computer Science Math Courses Taken</h3>
     <ul>
-    <li>CS 131 - CS 131: Combinatoric Structures</li>
+    <li> CS 131 -  Combinatoric Structures</li>
         <li>CS 132 - Geometric Algorithms</li>
         <li>CS 237 - Probability In Computing</li>
     </ul>
