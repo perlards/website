@@ -4,7 +4,7 @@ import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
 
-function Projects({ name, description, github, imageSrcs = [] }) {
+function Projects({ name, description, github, link, imageSrcs = [] }) {
     const [isOpen, setIsOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
     const slides = imageSrcs.map(src => ({ src }));
@@ -30,7 +30,7 @@ function Projects({ name, description, github, imageSrcs = [] }) {
             onClick={() => setIsOpen(true)}
         />
             )}
-        {github ? (
+        {github && (
         <a 
                 target="_blank" rel="noreferrer" href={github}>
                 <button className="github">
@@ -43,7 +43,16 @@ function Projects({ name, description, github, imageSrcs = [] }) {
                     GitHub
                 </button>
             </a>
-        ): (
+        )}
+  
+        {link && (
+        <a target="_blank" rel="noreferrer" href={link}>
+            <button className="live">
+            Live
+            </button>
+        </a>
+        )}
+        {!github && !link && (
             <div className="coming-soon-placeholder">
             <button className="github disabled" disabled >
 
