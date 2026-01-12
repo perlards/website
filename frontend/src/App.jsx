@@ -17,7 +17,9 @@ import periodically2 from './assets/periodically2.png';
 import periodically3 from './assets/periodically3.png';
 import periodically4 from './assets/periodically4.png';
 import periodically6 from './assets/periodically6.png';
-
+import JJ1 from './assets/JavaJitters1.png';
+import JJ2 from './assets/JJ2.png';
+import JJ3 from './assets/JJ3.png';
 
 
 import './App.css'
@@ -68,7 +70,7 @@ import './App.css'
             <Projects
                 name="JavaJitters"
                 description="Java Jitters is a coffee rating web application built in collaboration with two other classmates, allowing users to discover, rate, and share café drinks. I was responsible for implementing the frontend–backend integration, connecting MongoDB collections to interactive UI components and form workflows. I designed and styled the application’s global layout system using Tailwind CSS to ensure responsive, consistent, and maintainable styling, and developed the form-based input system for adding new café locations. The project emphasizes clean component structure, scalable full-stack design, and modern Next.js development practices."
-                imageSrcs={[JavaJitters1,JJ2,JJ3]} /* add more images of project one here*/
+                imageSrcs={[JJ1,JJ2,JJ3]} /* add more images of project one here*/
                 github="https://github.com/perlards/javajitters"
 
             />
