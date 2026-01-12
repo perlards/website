@@ -19,6 +19,7 @@ import periodically4 from './assets/periodically4.png';
 import periodically6 from './assets/periodically6.png';
 
 
+
 import './App.css'
 
     function App() {
@@ -65,6 +66,19 @@ import './App.css'
             <>
             <h2>Projects</h2>
             <Projects
+                name="JavaJitters"
+                description="Java Jitters is a coffee rating web application built in collaboration with two other classmates, allowing users to discover, rate, and share café drinks. I was responsible for implementing the frontend–backend integration, connecting MongoDB collections to interactive UI components and form workflows. I designed and styled the application’s global layout system using Tailwind CSS to ensure responsive, consistent, and maintainable styling, and developed the form-based input system for adding new café locations. The project emphasizes clean component structure, scalable full-stack design, and modern Next.js development practices."
+                imageSrcs={[JavaJitters1,JJ2,JJ3]} /* add more images of project one here*/
+                github="https://github.com/perlards/javajitters"
+
+            />
+            <Projects
+            name="Periodically. [HackMIT 2025]"
+            description="Conceptualized a web app featuring an AI wellness companion for journaling, natural conversations, and emotional insights. Built front-end architecture and UI components for Journal, Mood, and Insights using React, TypeScript, and Tailwind CSS. Collaborated in a 3-person team for HackMIT 2025, contributing to Anthropic, Windsurf and YC challenges."
+            imageSrcs={[periodically1,periodically2,periodically3,periodically4,periodically6]} // replace with actual screenshots of the HackMIT project
+            github="https://github.com/perlards/hackmit-2025" 
+            />
+            <Projects
                 name="Personal Portfolio"
                 description="This website is my personal space to showcase my projects, skills, and experiences as an aspiring software engineer working towards my computer science degree. Built using React, my website utilizes JSX to create dynamic, interactive pages while leveraging mutiple programming languages such as, HTML, CSS, and JavaScript. Developing this site helped me deepen my understanding of modern web development while challenging me to continuously improve my coding skills. This site will keep evolving as I take on new challenges and grow my skills."
                 imageSrcs={[websiteSS,websiteSS2]} /* add more images of project one here*/
@@ -77,12 +91,6 @@ import './App.css'
                 imageSrc={websiteSS2}
                 github="" /* add link here */
 
-            />
-            <Projects
-            name="Periodically. [HackMIT 2025]"
-            description="Conceptualized a web app featuring an AI wellness companion for journaling, natural conversations, and emotional insights. Built front-end architecture and UI components for Journal, Mood, and Insights using React, TypeScript, and Tailwind CSS. Collaborated in a 3-person team for HackMIT 2025, contributing to Anthropic, Windsurf and YC challenges."
-            imageSrcs={[periodically1,periodically2,periodically3,periodically4,periodically6]} // replace with actual screenshots of the HackMIT project
-            github="https://github.com/perlards/hackmit-2025" 
             />
             </>
         }
